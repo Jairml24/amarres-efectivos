@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Maestro Abad</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">AMARRES</a></li>
+                <li><a href="#">TRABAJOS QUE REALIZO</a></li>
+                <li><a href="#">CURACIONES</a></li>
+                <li><a href="#">VIDEOS</a></li>
+            </ul>
+            <div class="btn-menu-hamburguesa">
+                <a href=""><img id='btn-menu' src="img/icon-hamburguesa.jpg" width='60px' alt=""></a>
+            </div>
+        </div>
+        <div class="menu-hamburguesa">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">AMARRES</a></li>
+                <li><a href="#">TRABAJOS QUE REALIZO</a></li>
+                <li><a href="#">CURACIONES</a></li>
+                <li><a href="#">VIDEOS</a></li>
+            </ul>
+        </div>
+        <div>
+            <img src="img/cabecera.jpg" alt="" width="100%">
+        </div>
+    </div>
+
+    <div class="pie-pagina">
+        <a target='_blank' href="https://api.whatsapp.com/send?phone=976373935"><img src="img/telefono.png" alt="" width='50px'></a>
+        <a target='_blank' href="https://api.whatsapp.com/send?phone=976373935"><img src="img/whatsapp.png" alt="" width='50px'></a>
+
+    </div>
+</body>
+</html>
+
+<script>
+    var menuDiv = document.querySelector('.menu-hamburguesa');
+    document.getElementById('btn-menu').addEventListener('click', e => {
+        e.preventDefault()
+         menuDiv.classList.toggle('menu-hamburguesa-desplegado');
+});
+</script>

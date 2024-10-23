@@ -1,0 +1,347 @@
+body {
+    margin: 0 0 100px;
+    padding: 0;
+    background: black !important;;
+}
+.menu{
+    height: 50px;
+    background-color: #8d0000;
+    z-index: 2;
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+.menu ul {
+    display:flex;
+    justify-content: center;
+    font-family: cursive;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: darkred;
+}
+
+
+
+
+.btn-menu-hamburguesa{
+    display: none;
+    text-align: right;
+    padding: 0 10px;
+    color:white;
+    vertical-align: center;
+    height: 50px;
+}
+
+.menu-hamburguesa{
+    list-style-type: none;
+    position:fixed;
+    background: #0c0808;
+    width: 100%;
+    min-height: 100vh;
+    line-height: 60px;
+    top:-100vh;
+    transition:1s all;
+    z-index: 1;
+    font-size:18px;
+   
+}
+.menu-hamburguesa-desplegado{
+    top:50px;
+    transition:1s all;
+   
+}
+
+.menu-hamburguesa li a{
+    text-decoration: none;
+    color:#ddd
+}
+
+.cabecera{
+    background-color: black;
+}
+
+#ms-contenido{
+    position: relative;
+    overflow: hidden;
+}
+.contenedor-cards{
+    animation: slideFromRight 1s forwards;
+}
+
+@keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0); 
+    }
+  }
+
+
+
+#frase-final{
+  padding: 60px;
+  border-top:2px solid yellow;
+  border-bottom:2px solid yellow;
+}
+
+#frase-final p{
+  font-size: 32px;
+  color: yellow;
+  font-family: math;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.contenido{
+    padding: 40px;
+}
+p{
+    color:white;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.subtitulos{
+    color:#e9ecef;;
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+}
+#quien-soy{
+    background-color: #000000cf;
+    box-shadow: -17px -13px 20px 20px #000000;
+}
+
+#quien-soy p{
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .menu li{
+        display: none;
+    }
+    .btn-menu-hamburguesa{
+        display: block;
+    }
+    #mis-trabajos>div>img{
+        width: 100%;
+    } 
+    .video {
+        max-width: 100%; /* Los videos se ajustarán al ancho de su contenedor */
+        height: auto;    /* La altura se ajustará automáticamente */
+    }
+    .pagos img{
+        width:90%;
+    }
+
+    #frase-final{
+      padding: 20px;
+
+    }
+    #frase-final p{
+      font-size: 28px;
+    
+    }
+    #quien-soy p{
+            font-family: serif;
+          font-size: 22px;
+    }
+
+}
+
+
+
+#mis-servicios{
+    /* background-color: #be000078; */
+    background-color: #000000cf;
+    box-shadow: 1px -20px 20px 20px #08191E;
+}
+
+#mis-servicios a{
+  font-size: 16px;
+}
+
+.seccion{
+    width: 100%;
+    display: inline-block; /* Ajusta el tamaño al contenido (la imagen) */
+    position: relative;
+}
+.seccion>img{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+
+
+
+}
+.card {
+    border: 1px solid #ddd; /* Borde del card */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    background: darkred !important;
+    text-align: center;
+   
+  }
+  .card h3{
+    margin:20px 0px;
+    color: white
+  }
+  .card label{
+    margin-bottom: 10px;
+    font-size: 19px;
+    color: white
+  }
+  .card a{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .card a:hover{
+    /* background: #1a9c4b; */
+  }
+
+.boton-whatsapp {
+    display: inline-block;
+    background-color:#25D366;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+
+#mis-trabajos{
+    background: #ff000080;
+    box-shadow: -20px -1px 14px 7px #8F0902;
+    /* color: #eddd00;
+    font-family: "Aref Ruqaa", Sans-serif;
+    text-align: center;
+    padding: 20px; */
+    /* border-top:  4px  solid #eddd00; */
+}
+#mis-trabajos img{
+    margin-bottom: 20px;
+}
+
+.pie-pagina{
+    display:flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000cf;
+    /* opacity: 0.7; */
+    padding: 10px 0px;
+ 
+}
+
+.pie-pagina a{
+    padding: 0 60px
+ }
+
+
+ @keyframes animacion-svg {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  @keyframes rotacion {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(40deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+ 
+
+  svg {
+    animation: animacion-svg 1s infinite; 
+  }
+
+  #pie-ws {
+    animation: animacion-svg 2s infinite; 
+  }
+
+  #telefono {
+    animation: rotacion 1s linear infinite;
+  }
+
+#mis-trabajos img{
+    transition: transform 0.5s ease;  
+    cursor:pointer;
+ 
+}
+#mis-trabajos img:hover{
+    transform: scale(1.1);
+  }
+
+  #mis-servicios img{
+    transition: transform 0.5s ease;  
+    cursor:pointer;
+}
+#mis-servicios img:hover{
+    opacity: 0.8;
+    transform: scale(0.97);
+  }
+
+
+.terminos{
+    background: black;
+    color: #bbb;
+    padding: 40px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.terminos label{
+  font-size: 14px;
+}
+
+#testimonios{
+  background-color: #000000a3;
+  color: white;
+ 
+}
+
+#testimonios label{
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#testimonios h3{
+  color: yellow;
+}
+#testimonios>div>div>div>img {
+  border-radius: 50%;
+}
+
