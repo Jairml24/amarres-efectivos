@@ -154,6 +154,9 @@ p{
     .menu li{
         display: none;
     }
+    .img-menu-a{
+      display: none;
+    }
     .img-logo{
       width: 130px;
     }
