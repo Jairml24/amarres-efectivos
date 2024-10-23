@@ -4,18 +4,21 @@ body {
     background: black !important;;
 }
 .menu{
-    height: 50px;
-    background-color: #8d0000;
+    height: 170px;
+    background-image: radial-gradient(circle at 50.09% 50.02%, #9e54ff 0, #582def 25%, #2828bb 50%, #0831bf 75%, #0e2583 100%);
     z-index: 2;
-    position:fixed;
+    box-shadow: inset 4px -11px 15px 0px rgba(0, 0, 0, 0.8);
     top:0;
     width: 100%;
 }
 
 .menu ul {
+  width: 100%;
     display:flex;
     justify-content: center;
-    font-family: cursive;
+    font-size:20px;
+    background-color: rgba(6, 39, 88, 0.25);
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -36,9 +39,13 @@ body {
 }
 
 .menu li a:hover {
-    background-color: darkred;
+    /* background-color: darkred; */
 }
 
+.menu img{
+  border-radius: 50px;
+  box-shadow: -1px 6px 13px 4px #06030afa;
+}
 
 
 
